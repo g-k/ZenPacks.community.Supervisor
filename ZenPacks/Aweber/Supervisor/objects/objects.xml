@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<objects>
+
+  <!-- ('', 'zport', 'dmd', 'Processes', 'Supervisor') -->
+  <object id='/zport/dmd/Processes/Supervisor' module='Products.ZenModel.OSProcessOrganizer' class='OSProcessOrganizer'>
+    <tomanycont id='osProcessClasses'>
+      <object id='supervisord' module='Products.ZenModel.OSProcessClass' class='OSProcessClass'>
+	<property type="string" id="name" mode="w" >
+	  supervisord
+	</property>
+	<property type="string" id="regex" mode="w" >
+	  supervisord
+	</property>
+	<property type="boolean" id="ignoreParameters" mode="w" >
+	  True
+	</property>
+	<property type="text" id="description" mode="w" >
+	  Supervisor Deamon
+	</property>
+	<property type="int" id="sequence" mode="w" >
+	  1
+	</property>
+      </object>
+    </tomanycont>
+  </object>
+
+</objects>
